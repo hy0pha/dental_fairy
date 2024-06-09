@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="com.example.capstone2">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:enableOnBackInvokedCallback="true">
+        android:label="capstone2"
+        android:icon="@mipmap/ic_launcher"
+        android:enableOnBackInvokedCallback="true">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|density|uiMode"
+            android:launchMode="singleTop"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="io.flutter.embedding.android.NormalTheme"
+                />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
+

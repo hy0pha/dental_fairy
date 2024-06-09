@@ -1,0 +1,49 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "capstonedesign2-d8752",
+          "appId": "1:588035959773:android:c546232071924a92e2a434",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "capstonedesign2-d8752",
+          "configurations": {
+            "android": "1:588035959773:android:c546232071924a92e2a434",
+            "ios": "1:588035959773:ios:091db2693f36df78e2a434",
+            "macos": "1:588035959773:ios:091db2693f36df78e2a434",
+            "web": "1:588035959773:web:f33c2d0b74eef9dbe2a434",
+            "windows": "1:588035959773:web:b414619448ea2c87e2a434"
+          }
+        }
+      }
+    }
+  },
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "storage": {
+    "rules": "storage.rules"
+  }
+}
